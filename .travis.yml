@@ -1,13 +1,13 @@
 language: python
 python:
   - '3.7'
+script:
+  - touch foo
 deploy:
   provider: pypi
   user: sparshik
-  password:
-    secure: $PYPI_PASSWORD
-  server: https://mypackageindex.com/index
+  password: Sparshik#$37
+  server: https://test.pypi.org/legacy/
   distributions: "sdist bdist_wheel" # Your distributions here
-
   on:
     branch: master
