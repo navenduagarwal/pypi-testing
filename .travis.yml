@@ -5,8 +5,8 @@ script:
   - echo foo
 deploy:
   provider: pypi
-  user: sparshik
-  password: Sparshik#$37
+  user: __token__
+  password: pypi-AgENdGVzdC5weXBpLm9yZwIkZGNjZWFkYzEtNDRkZC00ODE3LThlMzQtZjZjNDI0MDY5ZmI2AAI9eyJwZXJtaXNzaW9ucyI6IHsicHJvamVjdHMiOiBbInNwYXJzaGlrLWt5YyJdfSwgInZlcnNpb24iOiAxfQAABiAxnnqbS4oT51aY45xL6A2BRY0RbeIWoSL5reRfvla6Xg
   server: https://test.pypi.org/legacy/
   distributions: "sdist bdist_wheel" # Your distributions here
   on:
